@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Main page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <p th:text="'Hello, ' + user + '!'" />
+    <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+     <!-- 
+    <table>
+    	<tr th:each="person : ${personList}">
+    		<td th:text="${person.name}"></td>
+    	</tr>
+    </table>
+    -->
+</body>
+</html>
